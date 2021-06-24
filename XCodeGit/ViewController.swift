@@ -9,12 +9,28 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var tfUsuario: UITextField!
+    @IBOutlet weak var tfPassword: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Brackground color
-        view.backgroundColor = .red
     }
 
-
+    @IBAction func btnEntrar(_ sender: Any) {
+        let usuario = tfUsuario.text
+        let password = tfPassword.text
+    
+        // Validar
+        validar(usuario: usuario!, password: password!)
+    }
+    
+    private func validar(usuario: String, password: String) {
+        if usuario.isEmpty || password.isEmpty {
+            // Alerta
+        } else {
+            // Exito
+        }
+    }
+    
 }
 
