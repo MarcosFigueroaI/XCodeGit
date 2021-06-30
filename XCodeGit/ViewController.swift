@@ -27,8 +27,10 @@ class ViewController: UIViewController {
     private func validar(usuario: String, password: String) {
         if usuario.isEmpty || password.isEmpty {
             // Alerta
+            print("Vacios")
         } else {
             // Exito
+            print("Exito")
         }
     }
     
